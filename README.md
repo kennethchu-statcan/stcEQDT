@@ -27,5 +27,5 @@ Consult the vignette __json2tree-usage__ to see how to use the function
 __stcEQDT::json2tree(.)__ to visualize a given input EQDT JSON file
 to tree format and save the result to file, by
 
-1.  downloading __vignettes/json2tree-usage.html__ and open the downloaded file in a web browser, or
+1.  downloading __vignettes/json2tree-usage.html__ (see subfolder above) and open the downloaded file in a web browser, or
 1.  executing the command __browseVignettes('stcEQDT')__ at the R console (after __stcEQDT__ has been installed).
