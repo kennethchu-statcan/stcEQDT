@@ -1,0 +1,222 @@
+
+(Root) : languages = English; name = OID Exit Survey; surveyTitle = (OID Exit Survey, Sondage de fin d’emploi à la DOI)
+    (Section) : text = (Getting started, Pour commencer); shortDescription = 
+        (Page) : pageNumber = 1; shortDescription = Getting started
+            (Info) : text = (<h3>Why are we conducting this survey?</h3><br/>Your feedback is important to us and will provide us with valuable information to help us identify ways to continuously improve our workplace.<br/><br/>Your participation is voluntary, but it will help us greatly!<br/><br/>Statistics Canada is committed to respecting the privacy of individuals. Your responses will be analyzed in aggregate with other individuals’ responses to help protect anonymity, and the information will be held in strict confidence. Your personal information will be protected by the <em>Privacy Act</em>.<br/><br/>This exit survey will take up to 10 minutes to complete. We would like to thank you for your contributions during your time in the Operations and Integration Division.<br/><br/><strong>Your information may also be used by Statistics Canada for other statistical and research purposes.</strong><br/><br/><strong>Although voluntary, your participation is important so that the information collected is as accurate and complete as possible.</strong>, <h3>Pourquoi menons-nous cette enquête?</h3><br/>Vos commentaires sont important pour nous et ils nous fourniront de l’information de valeur afin de nous aider à continuellement améliorer notre milieu de travail.<br/><br/>Votre participation est volontaire, mais elle nous aidera grandement!<br/><br/>Statistique Canada s’engage à respecter la vie privée des individus. Vos réponses seront analysées globalement avec les réponses des autres personnes afin d’en protéger l’anonymat et l’information sera strictement confidentielle.<br/><br/>Votre information personnelle sera protégée par la <em>Loi sur la protection des renseignements personels</em>.<br/><br/>Ce questionnaire prendra jusqu’a 10 minutes à compléter. Nous aimerions vous remercier pour votre contribution pendant votre séjour à Statistique Canada.<br/><br/><strong>Les renseignements que vous fournissez pourraient aussi être utilisés par Statistique Canada à d’autres fins statistiques et de recherche.</strong><br/><br/><strong>Bien qu’elle soit volontaire, votre participation est importante afin que les renseignements recueillis soient les plus exacts et les plus complets possible.</strong>)
+    (Section) : text = (Important features, Fonctionnalités importantes); shortDescription = 
+        (Page) : pageNumber = 2; shortDescription = Important features - Option 1 for Non-evaluation survey
+            (Info) : text = (<h3>To navigate the questionnaire</h3><img src="images/Previous_Next_button_E.jpg" alt="Previous and Next Buttons"><br/><br/>Use the<strong> Previous</strong> and <strong>Next </strong>buttons located at the bottom right of each page.<br/>Do not use the navigation buttons at the top of your browser or the corresponding shortcut keys.<br/><br/>Based on your answers to certain questions, the questionnaire will automatically skip any questions or sub-questions <br/>that do not apply to your situation., <h3>Pour parcourir le questionnaire</h3><img src="images/Pr%C3%A9c%C3%A9dent_Suivant_button_F.jpg" alt="Previous and Next Buttons"><br/><br/>Utilisez les boutons <strong>Précédent</strong> et <strong>Suivant </strong>situés dans le coin inférieur droit de chaque page.<br/>N’utilisez pas les boutons de navigation situés dans la partie supérieure de votre navigateur ainsi que les touches de raccourci correspondantes.<br/><br/>Veuillez noter que les renseignements tirés des questionnaires partiellement remplis ou non enregistrés pourraient être conservés et utilisés à des fins statistiques et de recherche.)
+            (Info) : text = (<h3>Session timeout</h3>After <strong>2 hours of inactivity</strong>, your session will time out., <h3>Délai d’inactivité d’une session</h3>Après <strong>2 heures d’inactivité</strong>, votre session sera interrompue.)
+            (Info) : text = (<h3>To save your information</h3><img src="images/Save_Finish_Later_E.jpg" alt="Save and Finish Later Button"><br/><br/>If you cannot complete the questionnaire in one session, you can save the information you have entered by pressing the <strong>Save and finish later</strong> button at the bottom left of any page on which you are asked to enter information. You can then resume your session at another time.<br/><br/>Please be advised that information from partially completed or unsaved questionnaires may be retained and used for statistical and research purposes., <h3>Pour sauvegarder vos renseignements</h3><img src="images/Save_Finish_Later_F.jpg" alt="Save and Finish Later Button"><br/><br/>Si vous n’êtes pas en mesure de remplir le questionnaire au cours d’une seule session, vous pouvez sauvegarder les renseignements que vous avez entrés en appuyant sur le bouton <strong>Sauvegarder et terminer plus tard</strong>. Ce bouton est situé dans le coin inférieur gauche de toute page sur laquelle on vous demande d’entrer des renseignements. Vous pourrez ensuite reprendre votre session plus tard.<br/><br/>Veuillez noter que les renseignements tirés des questionnaires partiellement remplis ou non enregistrés pourraient être conservés et utilisés à des fins statistiques et de recherche.)
+    (Section) : text = (Development, Développement); shortDescription = ; restartNumbering = TRUE
+        (Page) : pageNumber = 3; shortDescription = 
+            (QuestionScale) : rowWidth = 8; questionNumber = 1.; text = (Indicate the extent to which you agree or disagree with each of the following statements about your experience in <abbr title="Operations and Integration Division">OID</abbr>., Veuillez indiquer dans quelle mesure vous êtes d’accord ou en désaccord avec chacun des énoncés suivants concernant votre expérience à la <abbr title="Division d'operation et integration">DOI</abbr>.)
+                (QuestionScaleRow, DEV_Q05) : rowNumber = a.; text = (I had access to the resources and materials I needed to do my job, Je disposais du matériel et de l’équipement nécessaire pour effectuer mon travail)
+                (QuestionScaleRow, DEV_Q10) : rowNumber = b.; text = (The duties, responsibilities, expectations and objectives of my job were clearly defined, Les tâches, responsabilités, attentes et objectifs de travail ont été clairement définis)
+                (QuestionScaleRow, DEV_Q15) : rowNumber = c.; text = (I understood the business processes and systems relevant to my job, J’ai compris les processus d’affaires et les systèmes en lien avec mon travail)
+                (QuestionScaleRow, DEV_Q20) : rowNumber = d.; text = (I was encouraged to take initiative in my work, J’ai été encouragé à démontrer de l’initiative dans mon travail)
+                (QuestionScaleRow, DEV_Q25) : rowNumber = e.; text = (My tasks were interesting and challenging, Mes tâches étaient intéressantes et stimulantes)
+                (QuestionScaleRow, DEV_Q30) : rowNumber = f.; text = (My skills and abilities were used to the fullest, Mes compétences et capacités ont été utilisées au maximum)
+                (QuestionScaleRow, DEV_Q35) : rowNumber = g.; text = (Learning opportunities were available in areas related to my job, Des opportunités d’apprentissages étaient disponibles en lien avec mon travail)
+                (QuestionScaleRow, DEV_Q40) : rowNumber = h.; text = (Relative to my colleagues performing similar work, I felt my position was fairly classified, Par rapport à mes collègues effectuant un travail similaire, j’ai senti que mon poste était bien classifié)
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Strongly Agree</strong>, <strong>Fortement d’accord</strong>); value = 1
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Somewhat agree</strong>, <strong>Plutôt d’accord</strong>); value = 2
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Neither agree nor disagree</strong>, <strong>Ni d’accord ni en désaccord</strong>); value = 3
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Somewhat disagree</strong>, <strong>Plutôt en désaccord</strong>); value = 4
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Strongly disagree</strong>, <strong>Fortement en désaccord</strong>); value = 5
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Don't know</strong>, <strong>Ne sais pas</strong>); value = 6
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Not applicable</strong>, <strong>Ne s’applique pas</strong>); value = 7
+        (Page) : pageNumber = 4; shortDescription = 
+            (Question, questionNumber 2.) : questionNumber = 2.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for having access to the resources and materials needed to do your job. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Tout à fait en désaccord » pour avoir accès aux ressources et au matériel nécessaires à votre travail. Fournissez plus d’information.); 
+                (AnswerGroup) : layout = vertical
+                    (CommentBoxAnswer, DEV_Q45) : maxValue = 200; text = (Comment box, Vos commentaires)
+            (Question, questionNumber 3.) : questionNumber = 3.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for having clearly defined duties, responsibilities, expectations and objectives for your job. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Tout à fait en désaccord » pour avoir des fonctions, des responsabilités, des attentes et des objectifs clairement définis pour votre travail. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q50) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Question, questionNumber 4.) : questionNumber = 4.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for feeling as though your tasks were interesting and challenging. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Fortement en désaccord » pour avoir l’impression que vos tâches étaient intéressantes et stimulantes. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q55) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Question, questionNumber 5.) : questionNumber = 5.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for feeling as though your skills and abilities were used to the fullest. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Fortement en désaccord » pour avoir l’impression que vos compétences et vos capacités étaient utilisées au maximum. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q60) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Question, questionNumber 6.) : questionNumber = 6.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for feeling, relative to your colleagues performing similar work, that your position was fairly classified. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Tout à fait en désaccord » pour avoir l’impression, par rapport à vos collègues effectuant un travail semblable, que votre poste était assez classifié. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q65) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Logic) : name = DIS_DEVQ45; description = 
+                (Conditional) 
+                    ( (DEV_Q05 == 4) OR (DEV_Q05 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 2.
+            (Logic) : name = DIS_DEVQ50; description = 
+                (Conditional) 
+                    ( (DEV_Q10 == 4) OR (DEV_Q10 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 3.
+            (Logic) : name = DIS_DEVQ55; description = 
+                (Conditional) 
+                    ( (DEV_Q25 == 4) OR (DEV_Q25 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 4.
+            (Logic) : name = DIS_DEVQ60; description = 
+                (Conditional) 
+                    ( (DEV_Q30 == 4) OR (DEV_Q30 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 5.
+            (Logic) : name = DIS_DEVQ65; description = 
+                (Conditional) 
+                    ( (DEV_Q40 == 4) OR (DEV_Q40 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 6.
+            (Logic) : description = To prevent blank page; name = ENTRY_BLANK
+                (Conditional) 
+                    ( ( (DEV_Q05 != 4) AND (DEV_Q05 != 5) ) AND ( (DEV_Q10 != 4) AND (DEV_Q10 != 5) ) AND ( (DEV_Q25 != 4) AND (DEV_Q25 != 5) ) AND ( (DEV_Q30 != 4) AND (DEV_Q30 != 5) ) AND ( (DEV_Q40 != 4) AND (DEV_Q40 != 5) ) )
+                    (Action) : actionName = GOTO; gotoTarget = DEV_Q70
+        (Page) : pageNumber = 5; shortDescription = 
+            (QuestionScale) : rowWidth = 8; questionNumber = 7.; text = (Indicate the extent to which you agree or disagree with each of the following statements about your experience in <abbr title="Operations and Integration Division">OID</abbr>., Indiquez dans quelle mesure vous êtes d’accord ou en désaccord avec chacun des énoncés suivants au sujet de votre expérience à la <abbr title="Division d&#39;operation et integration">DOI</abbr>.)
+                (QuestionScaleRow, DEV_Q70) : rowNumber = a.; text = (I felt supported and encouraged by my supervisor through their feedback, Je me suis senti soutenu et encouragé par mon superviseur par leur <br/>retroactions.); 
+                (QuestionScaleRow, DEV_Q75) : rowNumber = b.; text = (I was recognized by my supervisor or management for my accomplishments, J’ai été reconnu par mon superviseur ou ma direction pour mes réalisations); 
+                (QuestionScaleRow, DEV_Q80) : rowNumber = c.; text = (I felt comfortable sharing my thoughts, concerns and new ideas with members of my team and my supervisor, Je me sentais à l’aise de partager mon <br/>pensées, préoccupations et idées nouvelles <br/>avec les membres de mon équipe et mon <br/>Superviseur); 
+                (QuestionScaleRow, DEV_Q85) : rowNumber = d.; text = (I felt comfortable communicating in the official language of my choice, Je me sentais à l’aise de communiquer <br/>la langue officielle de mon choix); 
+                (QuestionScaleRow, DEV_Q90) : rowNumber = e.; text = (I felt like I was a valuable member of my team, Je me sentais comme faisant partie de l’équipe); 
+                (QuestionScaleRow, DEV_Q95) : rowNumber = f.; text = (My level of stress at work related to workload and deadlines was manageable, Mon niveau de stress au travail en lien avec la charge de travail et les délais était gérable); 
+                (QuestionScaleRow, DEV_Q100) : rowNumber = g.; text = (I had access to flexible working arrangements which allowed me to achieve work-life balance, J’ai eu accès à des modalités de travail flexibles); helpText = (<abbr title="For example"><strong>e.g.</strong></abbr><strong>,</strong> compressed hours, telework, <abbr title="par exemple"><strong>p. ex.</strong></abbr> Horaire comprimé, télétravail)
+                (QuestionScaleRow, DEV_Q105) : rowNumber = h.; text = (I felt respected in the workplace, Je me suis senti respecté dans mon milieu de travail); 
+                (QuestionScaleRow, DEV_Q110) : rowNumber = i.; text = (My work environment was free from bias, racism, discrimination, harassment and cultural insensitivity, whether towards myself or others, Mon environnement de travail était exempt de préjugés, de racisme, de discrimination, de harcèlement ou d’insensibilité culturelle, que ce soit envers moi-même ou envers les autres)
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Strongly agree</strong>, <strong>Fortement d’accord</strong>); value = 1
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Somewhat agree</strong>, <strong>Plutôt d’accord</strong>); value = 2
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Neither agree nor disagree</strong>, <strong>Ni d’accord ni en désaccord</strong>); value = 3
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Somewhat disagree</strong>, <strong>Plutôt en désaccord</strong>); value = 4
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Strongly disagree</strong>, <strong>Fortement en désaccord</strong>); value = 5
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Don't Know</strong>, <strong>Ne sais pas</strong>); value = 6
+                (QuestionScaleColumn) : colWidth = 4; text = (<strong>Not applicable</strong>, <strong>Ne s’applique pas</strong>); value = 7
+        (Page) : pageNumber = 6; shortDescription = 
+            (Question, questionNumber 8.) : questionNumber = 8.; text = (You indicated "Somewhat disagree" or "Strongly disagree" for having access to flexible working arrangements which allowed you to achieve work-like balance. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Tout à fait en désaccord » pour accès à des modalités de travail flexibles. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q115) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Question, questionNumber 9.) : questionNumber = 9.; text = (You indicated "Somewhat disagree" or "Strongly disagree" that your work environment was free from bias, racism, discrimination, harassment and cultural insensitivity, whether towards yourself or others. Provide more information., Vous avez indiqué « Plutôt en désaccord » ou « Tout à fait en désaccord » pour environnement de travail était exempt de préjugés, de racisme, de discrimination, de harcèlement ou d’insensibilité culturelle, que ce soit envers moi-même ou envers les autres. Fournissez plus d’information.); 
+                (AnswerGroup) 
+                    (CommentBoxAnswer, DEV_Q120) : maxValue = 200; text = (Comment box, Vos commentaires); 
+            (Logic) : name = DIS_DEVQ100; description = 
+                (Conditional) 
+                    ( (DEV_Q100 == 4) OR (DEV_Q100 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 8.
+            (Logic) : name = DIS_DEVQ110; description = 
+                (Conditional) 
+                    ( (DEV_Q110 == 4) OR (DEV_Q110 == 5) )
+                    (Action) : actionName = DISPLAY; displayTarget = questionNumber 9.
+            (Logic) : name = ENTRY_BLANK; description = 
+                (Conditional) 
+                    ( ( (DEV_Q100 != 4) AND (DEV_Q100 != 5) ) AND ( (DEV_Q110 != 4) AND (DEV_Q110 != 5) ) )
+                    (Action) : actionName = GOTO; gotoTarget = DEV_Q125
+        (Page) : pageNumber = 7; shortDescription = 
+            (Question) : questionNumber = 10.; text = (Do you believe you had promotional or at-level opportunities within <abbr title="Operations and Integration Division">OID</abbr>?, Pensez-vous avoir-eu des opportunités promotionnelles ou à niveau à la <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, DEV_Q125) : 
+                        (RadioField) : value = 1; text = (Yes, Oui); orderEn = ; orderFr = 
+                        (RadioField) : value = 2; text = (No, Non); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (CommentBoxAnswer, DEV_Q130) : maxValue = 500; text = (Explain your answer, Expliquez votre réponse)
+        (Page) : pageNumber = 8; shortDescription = 
+            (Question) : questionNumber = 11.; text = (How many teams did you work on while you were in <abbr title="Operations and Integration Division">OID</abbr>?, Pour combien d&#39;équipes avez-vous travaillé pendant quevous étiez à la <abbr title="Division d&#39;operation et integration">DOI</abbr>?); helpText = (<abbr title="For example"><strong>e.g.</strong></abbr><strong>,</strong> changing teams is considered to be a change to the tasks you were doing or a change on who you reported to, <abbr title="par exemple"><strong>p. ex.</strong></abbr> le changement d&#39;équipes est considéré comme un changement dans les tâches que vous faisiez ou comme un changement de superviseur)
+                (AnswerGroup) : layout = vertical
+                    (NumericAnswer, DEV_Q135) : maxValue = 2; minValue = 0; text = (Number of teams, Nombre d’équipe)
+    (Section) : text = (Retention, Rétention); shortDescription = 
+        (Page) : pageNumber = 9; shortDescription = 
+            (Question) : questionNumber = 12.; text = (Why are you leaving <abbr title="Operations and Integration Division">OID</abbr>?, Pourquoi quittez-vous la <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, RET_Q05) : 
+                        (RadioField) : value = 1; text = (Employment in another division within Statistics Canada, Emploi dans une autre division de Statistique Canada); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q10) : text = (Which division?, Quel division?); maxValue = 80
+                        (RadioField) : value = 2; text = (Employment in another federal department or agency, Emploi dans un autre ministère ou organisme fédéral); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q15) : text = (Which federal department or agency?, Quel ministère ou organisme fédéral?); maxValue = 80
+                        (RadioField) : value = 3; text = (Employment in provincial or territorial or municipal government, Emploi dans un organisme provincial, territorial ou municipal); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q20) : text = (Which provincial or territorial or municipal government?, Quel organisme provincial, territorial ou municipal?); maxValue = 80
+                        (RadioField) : value = 4; text = (Employment in the private sector, Emploi au secteur privé); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q25) : text = (Which company?, Quelle compagnie?); maxValue = 80; 
+                        (RadioField) : value = 5; text = (Becoming self-employed, Travailleur autonome); orderEn = ; orderFr = 
+                        (RadioField) : value = 6; text = (End of secondment, contract, or term of employment, Fin du détachement, contrat ou de la période d’emploi); orderEn = ; orderFr = 
+                        (RadioField) : value = 7; text = (Retirement, Retraite); orderEn = ; orderFr = 
+                        (RadioField) : value = 8; text = (Returning to school, Retour aux études); orderEn = ; orderFr = 
+                        (RadioField) : value = 9; text = (Other, Autre); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q30) : text = (Specify reason for leaving, Précisez la raison du départ); maxValue = 80
+        (Page) : pageNumber = 10; shortDescription = 
+            (QuestionScale) : rowWidth = 20; questionNumber = 13.; text = (Indicate if any of the following factors influenced your decision to leave <abbr title="Operations and Integration Division">OID</abbr>., Indiquez si l’une ou l’autre des raisons suivantes a joué un rôle dans votre décision de quitter la <abbr title="Division d&#39;operation et integration">DOI</abbr>.)
+                (QuestionScaleRow, RET_Q35) : rowNumber = a.; text = (Personal reasons, Raisons personelles); helpText = (<abbr title="For example"><strong>e.g.,</strong></abbr> family obligations, return to school, health reasons, <abbr title="Par exemple"><strong>p. ex.</strong></abbr> obligations familiales, retour aux études, raisons de santé)
+                (QuestionScaleRow, RET_Q40) : rowNumber = b.; text = (To make better use of my training and skills, Utilisation plus judicieuse de ma formation et des mes compétences)
+                (QuestionScaleRow, RET_Q45) : rowNumber = c.; text = (Level of pay, Rémunération)
+                (QuestionScaleRow, RET_Q50) : rowNumber = d.; text = (Opportunities for career advancement, Meilleurs opportunités d’avancement ailleurs)
+                (QuestionScaleRow, RET_Q55) : rowNumber = e.; text = (Learning and development opportunities, Opportunités d’apprentissage et perfectionnement)
+                (QuestionScaleRow, RET_Q60) : rowNumber = f.; text = (More challenging or interesting work<br/>elsewhere, Travail plus stimulant ou intéressant ailleurs)
+                (QuestionScaleRow, RET_Q65) : rowNumber = g.; text = (Level of support in the workplace, Niveau de support au travail)
+                (QuestionScaleRow, RET_Q70) : rowNumber = h.; text = (Workplace morale, Moral au travail)
+                (QuestionScaleRow, RET_Q75) : rowNumber = i.; text = (Conflict with colleagues, Conflit avec des collègues)
+                (QuestionScaleRow, RET_Q80) : rowNumber = j.; text = (Conflict with management, Conflit avec la direction)
+                (QuestionScaleRow, RET_Q85) : rowNumber = k.; text = (Location of workplace, Lieu de travail)
+                (QuestionScaleColumn) : colWidth = 5; text = (<strong>Not at all</strong>, <strong>Pas du tout</strong>); value = 1
+                (QuestionScaleColumn) : colWidth = 5; text = (<strong>Somewhat</strong>, <strong>Dans une certaine mesure</strong>); value = 2
+                (QuestionScaleColumn) : colWidth = 5; text = (<strong>Considerably</strong>, <strong>Beaucoup</strong>); value = 3
+            (Logic) : name = ENTRY_RETQ35; description = 
+                (Conditional) 
+                    ( (RET_Q05 == 5) )
+                    (Action) : actionName = GOTO; gotoTarget = RET_Q100
+        (Page) : pageNumber = 11; shortDescription = 
+            (Question) : questionNumber = 14.; text = (In your next career destination, what type of work will you be doing?, À votre prochaine destination professionelle, quel type de travail occuperez-vous?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, RET_Q90) : 
+                        (RadioField) : value = 1; text = (Same or different type of work at a <strong>higher</strong> group and level, Même ou différent type de travail à un groupe ou à un niveau <strong>plus élevé</strong>); helpText = (<abbr title="For example"><strong>e.g.,</strong></abbr> promotion, <abbr title="Par exemple"><strong>p. ex.</strong></abbr> promotion); orderEn = ; orderFr = 
+                        (RadioField) : value = 2; text = (Same type of work at the<strong> same</strong> group and level or equivalent, Même type de travail au <strong>même</strong> groupe et niveau ou équivalent); orderEn = ; orderFr = 
+                        (RadioField) : value = 3; text = (Different type of work at the <strong>same</strong> group and level or equivalent, Différent type de travail au <strong>même</strong> groupe et niveau ou équivalent); orderEn = ; orderFr = 
+                        (RadioField) : value = 4; text = (Other, Autre); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (TextAnswer, RET_Q95) : text = (Specify other type of work, Précisez quel type de travail); maxValue = 40
+                        (RadioField) : value = 5; text = (Not applicable, Ne s’applique pas); orderEn = ; orderFr = 
+        (Page) : pageNumber = 12; shortDescription = 
+            (Question) : questionNumber = 15.; text = (Could anything have been done to prevent you from leaving?, Est-ce que quelque chose aurait pu être fait pour vous empêcher de partir?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, RET_Q100) : 
+                        (RadioField) : value = 1; text = (Yes, Oui); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (CommentBoxAnswer, RET_Q105) : maxValue = 500; text = (Specify, Précisez)
+                        (RadioField) : value = 2; text = (No, Non); orderEn = ; orderFr = 
+                        (RadioField) : value = 3; text = (Not applicable, Ne s'applique pas); orderEn = ; orderFr = 
+    (Section) : text = (Recruitment, Recrutement); shortDescription = 
+        (Page) : pageNumber = 13; shortDescription = 
+            (Question) : questionNumber = 16.; text = (Did you enjoy your time in <abbr title="Operations and Integration Division">OID</abbr>?, Avez-vous apprécié votre temps à la <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, REC_Q05) : 
+                        (RadioField) : value = 1; text = (Yes, Oui); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (CommentBoxAnswer, REC_Q10) : maxValue = 500; text = (What did you enjoy the most about your experience in <abbr title="Operations and Integration Division">OID</abbr>?, Qu&#39;avez-vous le plus apprécié dans votre expérience à la <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+                        (RadioField) : text = (No, Non); value = 2; triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (CommentBoxAnswer, REC_Q15) : maxValue = 500; text = (What did you enjoy the least about your experience in <abbr title="Operations and Integration Division">OID</abbr>?, Qu&#39;avez-vous le moins apprécié dans votre expérience à la  <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+        (Page) : pageNumber = 14; shortDescription = 
+            (Question) : questionNumber = 17.; text = (Would you consider returning to <abbr title="Operations and Integration Division">OID </abbr>if the right opportunity arose?, Envisageriez-vous de revenir à la <abbr title="Division d&#39;operation et integration">DOI</abbr> si une bonne opportunité se présentait?)
+                (AnswerGroup) 
+                    (RadioAnswer, REC_Q18) : 
+                        (RadioField) : value = 1; text = (Yes, Oui); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) 
+                                (CommentBoxAnswer, REC_Q20) : maxValue = 500; text = (Specify, Précisez)
+                        (RadioField) : text = (No, Non); value = 2; triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) 
+                                (CommentBoxAnswer, REC_Q25) : maxValue = 500; text = (Specify, Précisez); 
+    (Section) : text = (Retention and recruitment, Rétention et recrutement); shortDescription = 
+        (Page) : pageNumber = 15; shortDescription = 
+            (Question) : questionNumber = 18.; text = (In your opinion, how could we improve our workplace?, À votre avis, comment pourrions-nous améliorer notre lieu de travail?)
+                (AnswerGroup) : layout = vertical
+                    (CommentBoxAnswer, REC_Q30) : maxValue = 500; text = (Enter your suggestions, Entrez vos suggestions); 
+    (Section) : text = (General Information, Information générale); shortDescription = 
+        (Page) : pageNumber = 16; shortDescription = General Info
+            (Question) : questionNumber = 19.; text = (How many years have you been working in <abbr title="Operations and Integration Division">OID</abbr>?, Combien d’années avez-vous travaillées à la <abbr title="Division d&#39;operation et integration">DOI</abbr>?)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, EXT_Q24) : 
+                        (RadioField) : value = 1; text = (Less than 2 years, Moins de 2 ans)
+                        (RadioField) : value = 2; text = (2 to 5 years, 2 à 5 ans)
+                        (RadioField) : text = (6 to 10 years, 6 à 10 ans); value = 3
+                        (RadioField) : value = 4; text = (11 to 20 years, 11 à 20 ans)
+                        (RadioField) : value = 5; text = (21 to 25 years, 21 à 25 ans)
+                        (RadioField) : text = (More than 26 years, 26 ans ou plus); value = 6
+    (Section) : text = (Submit, Soumettre); shortDescription = 
+        (Page) : pageNumber = 17; shortDescription = Submit; id = 7bd2fefb-384b-4d12-9216-677f3fa651d5
+            (Info) : text = (If you are ready to submit the questionnaire, press the <strong>Submit</strong> button in the bottom right corner., Si vous êtes prêt à soumettre votre enquête, appuyez sur le bouton <strong>Soumettre</strong> situé dans le coin inférieur droit.)
+

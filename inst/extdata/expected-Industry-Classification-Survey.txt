@@ -1,0 +1,448 @@
+
+(Root) : enableCAPIMonitoring = FALSE; hideProgressBar = FALSE; addSaveOnSubmitPage = TRUE; hasIEQPage = FALSE; captureTypeEditHistory = FALSE; printVersion = TRUE; name = BCP_ICS_UAT_R2; enableAuditTrail = TRUE; isSelectionEQ = FALSE; saveable = TRUE; enableStickyHeaders = TRUE; languages = English; nextButtonOnSubmit = FALSE; surveyTitle = (Industry Classification Survey, Enquête sur la classification des industries)
+    (Section) : text = (INIT Logic Section, list(syncLang = "English")); shortDescription = 
+        (Page) : pageNumber = 1; shortDescription = Init Logic goes here
+            (Logic) : openLogic = FALSE; name = Set Logicdate; description = 
+                (Conditional) 
+                    ( NO CONDITION )
+                    (Action) : actionName = SET; setTarget = logicdate <- 
+            (Logic) : openLogic = FALSE; description = This should be changed by the designer according to the number found in the annex.; name = SRGD_setflag
+                (Conditional) 
+                    ( NO CONDITION )
+                    (Action) : actionName = SET; setTarget = NAICS_Standards_Module_Inclusion_Exclusion_Flag <- 2
+            (Logic) : openLogic = FALSE; name = Setting Mandatory Business Q3 & Q4; description = 
+                (Conditional) 
+                    ( NO CONDITION )
+                    (Action) : actionName = SET; setTarget = B00323 <- 1
+    (Section) : text = (Interviewer entry, Pour commencer); shortDescription = Mandatory standard module
+        (Page) : pageNumber = 2; shortDescription = Getting started; id = bd6abd1e-3521-44db-9602-5fb4109ae60d
+            (Info) : text = (<strong>Hello, my name is </strong><mark data-referenceid="f2790e38-4ad7-43e7-8316-3bf99fc1a869" customfunction="" language="" capitalized=""><strong>#{InterviewerName}</strong></mark><strong> from Statistics Canada. I&#39;m calling to collect information required to complete the brief Industry Classification Survey.</strong><br/><br/><strong>May I speak with </strong><mark data-referenceid="2468ef54-e387-4348-80a2-a40bf1ea0a4f" customfunction="Prefill" language="" capitalized=""><strong>#{PrimaryRespondentGivenNames}</strong></mark><mark data-referenceid="08f72657-e3d0-4f81-8935-7d3d6ffafe69" customfunction="" language="" capitalized="">#{dummyvariableforspace}</mark> <mark data-referenceid="82f1c58f-e748-4ba2-8f48-7881edc1b0ed" customfunction="Prefill" language="" capitalized=""><strong>#{PrimaryRespondentFamilyName}</strong></mark><strong> or a person who can provide me with detailed information about the activities of </strong><mark data-referenceid="eafa9ad6-91c9-4e3f-9341-8b6d861b60fb" customfunction="Prefill" language="" capitalized=""><strong>#{LegalName}</strong></mark><strong>?</strong><br/><br/><details><summary><strong>Interviewer computer-assisted telephone interview (CATI)</strong></summary>INTERVIEWER :<br/><br/>The following instructions are applicable to mandatory business surveys only.<br/><br/><ul><li>If the survey collection method is 100% CATI, the directives below must be read to the respondent unless the directives were provided to the respondent prior to collection.</li></ul></details><br/><br/><details><summary><strong>Survey purpose</strong></summary><strong>The information from this survey will serve the following purposes: maintain and update the Canadian Business Register, the principal frame for the economic statistics program of Statistics Canada and to improve the efficiency of the economic statistics programs by collecting information on the main products and activities of this business.</strong><br/><br/><strong>The information you provide may also be used by Statistics Canada for other statistical and research purposes.</strong></details><br/><br/><details><summary><strong>Authority and confidentiality</strong></summary><strong>Your answers are collected under the authority of the </strong><strong><em>Statistics Act</em></strong><strong> and will be kept strictly confidential. Statistics Canada can share your information with your consent or, in limited cases, where permitted by the </strong><strong><em>Statistics Act</em></strong><strong>.</strong></details><br/><br/><details><summary><strong>Mandatory participation</strong></summary><strong>Participation in the Industry Classification Survey is required by law.</strong></details>, <strong>Bonjour, mon nom est </strong><mark data-referenceid="d05bd42f-710e-4c5a-86f1-a6270aa2c8b1" customfunction="" language="" capitalized=""><strong>#{InterviewerName}</strong></mark><strong> de Statistique Canada. Je vous appelle pour recueillir les informations nécessaires afin de remplir le bref sondage sur la classification des industries.</strong><br/><br/><strong>Puis-je parler à </strong><mark data-referenceid="48e64ecf-9d82-4be9-82eb-029c204c3d17" customfunction="Prefill" language="" capitalized=""><strong>#{PrimaryRespondentGivenNames}</strong></mark><mark data-referenceid="ed5599a4-7eff-41c7-b6ce-4cbdb517eb48" customfunction="" language="" capitalized="">#{dummyvariableforspace}</mark> <mark data-referenceid="43e7dabb-5141-4695-a8ff-3198e896494e" customfunction="Prefill" language="" capitalized=""><strong>#{PrimaryRespondentFamilyName}</strong></mark><strong> ou une personne que peut me fournir des informations détaillées sur les activités de </strong><mark data-referenceid="17cd0c31-5765-4eac-82c1-31375ac11364" customfunction="Prefill" language="" capitalized=""><strong>#{LegalName}</strong></mark><strong>?</strong><br/><br/><details><summary><strong>Interview téléphonique assisté par ordinateur (ITAO)</strong></summary>INTERVIEWEUR :<br/><br/>Les directives suivantes s’appliquent seulement si c’est une enquête entreprise obligatoire.<br/><br/><ul><li>Si l’ITAO est la seule méthode de collecte de l’enquête, les directives ci-dessous doivent être lues au répondant à moins que les directives aient été fournies avant le début de la collecte.</li></ul></details><br/><br/><details><summary><strong>Objectif de l’enquête</strong></summary><strong>Les renseignements tirés de cette enquête serviront aux fins suivantes: tenir et mettre à jour le Registre canadien des entreprises, la base principale du programme de statistiques économiques de Statistique Canada et améliorer l&#39;efficacité du programme de statistique en recueillant des informations sur les principaux produits et activités de cette entreprise.</strong><br/><br/><strong>Les renseignements que vous nous transmettez pourraient aussi être utilisés par Statistique Canada à d’autres fins statistiques et pour la recherche.</strong></details><br/><br/><details><summary><strong>Autorité et confidentialité</strong></summary><strong>Vos renseignements sont recueillis en vertu de la </strong><strong><em>Loi sur la statistique</em></strong><strong> et demeureront strictement confidentiels. Statistique Canada peut communiquer vos renseignements avec votre consentement ou dans des cas limités où la </strong><strong><em>Loi sur la statistique</em></strong><strong> l’autorise.</strong></details><br/><br/><details><summary><strong>Participation obligatoire</strong></summary><strong>En vertu de la loi et compte tenu de l&#39;importance de ses résultats, vous êtes tenu(e) de participer à l&#39;Enquête sur la Classification des Industries.</strong></details>)
+            (Logic) : openLogic = FALSE; name = Set Space variable to empty space
+                (Conditional) 
+                    ( NO CONDITION )
+                    (Action) : actionName = SET; setTarget = dummyvariableforspace <-  
+    (Section) : text = (Business or organization and contact information, Renseignements sur l’entreprise ou l’organisation et la personne-ressource); shortDescription = Mandatory standard module
+        (Page) : pageNumber = 3; shortDescription = Business register; id = bd4289cb-a56b-44b5-864e-b26cf21cbbb9
+            (Question) : questionNumber = 1; text = (<strong>Verify or provide</strong> the business or organization's<strong> legal and operating name</strong>, and correct information if needed., <strong>Vérifiez ou indiquez le nom légal et le nom commercial</strong> de l&#39;entreprise ou de l&#39;organisation et corrigez-les au besoin.); helpText = (<strong>Note:</strong> Legal name should only be modified to correct a spelling error or typo.<br/><br/><strong>Note:</strong> Press the help button (<strong>?</strong>) for additional information., <strong>Note :</strong> Les modifications apportées au nom légal doivent être effectuées uniquement dans le but de corriger une erreur d&#39;orthographe ou de typographie.<br/><br/><strong>Note :</strong> Appuyez sur le bouton d’aide (<strong>?</strong>) pour plus de renseignements.); contextSensitive = (<h4><strong>Legal Name</strong></h4>The legal name is one recognized by law, thus it is the name liable for pursuit or for debts incurred by the business or organization. In the case of a corporation, it is the legal name as fixed by its charter or the statute by which the corporation was created.<br/><br/>Modifications to the legal name should only be done to correct a spelling error or typo.<br/><br/>To indicate a legal name of another legal entity you should instead indicate it in question 4 by selecting ‘Not currently operational’ and then choosing the applicable reason and providing the legal name of this other entity along with any other requested information.<br/><br/><h4><strong>Operating Name</strong></h4>The operating name is a name the business or organization is commonly known as if different from its legal name. The operating name is synonymous with trade name., <h4><strong>Nom légal</strong></h4>Le nom légal (dénomination sociale) est celui qui est reconnu par la loi, il s&#39;agit donc du nom responsable des poursuites ou des dettes contractées par l&#39;entreprise ou l&#39;organisation. Dans le cas d’une société, c’est le nom légal tel que fixé par sa charte ou la loi par laquelle la société a été créée.<br/><br/>Les modifications apportées à la dénomination sociale doivent être effectuées uniquement dans le but de corriger une erreur d&#39;orthographe ou de typographie.<br/><br/>Pour indiquer un nom légal d’une autre entité juridique, vous devriez plutôt l’indiquer à la question 4 en sélectionnant « N’est pas opérationnelle en ce moment », puis en choisissant la raison appropriée et de fournir le nom légal de cette autre entité ainsi que toute autre information demandée.<br/><br/><h4><strong>Nom commercial</strong></h4>Le nom commercial est le nom sous lequel l’entreprise ou l’organisation est communément connue et est différent de son nom légal.); id = 8592a0f9-acda-4af9-ac53-97ac300d4d30
+                (AnswerGroup) : layout = horizontal
+                    (TextAnswer, LegalName) : text = (Legal name, Nom légal); maxValue = 100; prefillable = TRUE; shortdescription_en = Business or Organization's legal name; shortdescription_fr = Business or Organization's legal name
+                    (TextAnswer, OperatingName) : text = (Operating name (if applicable), Nom commercial (s’il y a lieu)); maxValue = 100; prefillable = TRUE; shortdescription_en = Business or Organization's operating name; shortdescription_fr = Business or Organization's operating name
+            (Question) : questionNumber = 2; text = (<strong>Verify or provide the contact information</strong> for the designated <strong>contact person</strong> for the business or organization, and correct information if needed., <strong>Vérifiez ou indiquez les coordonnées de la personne-ressource</strong> de l'entreprise ou de l'organisation désignée pour recevoir ce questionnaire et corrigez-les au besoin.); helpText = (<strong>Note:</strong> The designated contact person is the person who should receive this questionnaire. The designated contact person may not always be the one who actually completes the questionnaire., <strong>Note :</strong> La personne-ressource désignée est la personne qui devrait recevoir ce questionnaire, mais elle n’est pas nécessairement celle qui le remplit.)
+                (AnswerGroup) : layout = horizontal
+                    (TextAnswer, PrimaryRespondentGivenNames) : text = (First name, Prénom); maxValue = 24; prefillable = TRUE; shortdescription_en = First name; shortdescription_fr = First name
+                    (TextAnswer, PrimaryRespondentFamilyName) : text = (Last name, Nom de famille); maxValue = 32; prefillable = TRUE; shortdescription_en = Last name; shortdescription_fr = Last name
+                (AnswerGroup) : layout = horizontal
+                    (TextAnswer, PrimaryRespondentTitle) : text = (Title, Titre); maxValue = 32; prefillable = TRUE; shortdescription_en = Title of position; shortdescription_fr = Title of position
+                    (DropdownAnswer, PrimaryRespondentLanguageCode) : text = (Preferred language of communication, Langue de communication préférée); prefillable = TRUE
+                        (DropdownField) : value = 1; text = (English, Anglais); orderEn = ; orderFr = 
+                        (DropdownField) : value = 2; text = (French, Français); orderEn = ; orderFr = 
+                (AnswerGroup) : layout = vertical
+                    (TextAnswer, PrimaryRespondentAddressStreet) : text = (Mailing address (number and street), Adresse postale (numéro et rue)); maxValue = 64; prefillable = TRUE; shortdescription_en = Mailing address; shortdescription_fr = Mailing address
+                (AnswerGroup) : layout = horizontal
+                    (TextAnswer, PrimaryRespondentAddressCity) : text = (City, Ville); maxValue = 32; prefillable = TRUE; shortdescription_en = City; shortdescription_fr = City
+                    (DropdownAnswer, PrimaryRespondentAddressProvinceCode) : text = (Province, territory or state, Province, territoire ou état); textType = TRUE; prefillable = TRUE; shortdescription_en = Province, territory or state; shortdescription_fr = Province, territory or state
+                        (FieldGroup) : text = (Canada, Canada)
+                            (DropdownField) : value = AB; text = (Alberta, Alberta); orderEn = ; orderFr = 
+                            (DropdownField) : value = BC; text = (British Columbia, Colombie-Britannique); orderEn = ; orderFr = 
+                            (DropdownField) : value = MB; text = (Manitoba, Manitoba); orderEn = ; orderFr = 
+                            (DropdownField) : value = NB; text = (New Brunswick, Nouveau-Brunswick); orderEn = ; orderFr = 
+                            (DropdownField) : value = NL; text = (Newfoundland and Labrador, Terre-Neuve-et-Labrador); orderEn = ; orderFr = 
+                            (DropdownField) : value = NT; text = (Northwest Territories, Territoires-du-Nord-Ouest); orderEn = ; orderFr = 
+                            (DropdownField) : value = NS; text = (Nova Scotia, Nouvelle-Écosse); orderEn = ; orderFr = 
+                            (DropdownField) : value = NU; text = (Nunavut, Nunavut); orderEn = ; orderFr = 
+                            (DropdownField) : value = ON; text = (Ontario, Ontario); orderEn = ; orderFr = 
+                            (DropdownField) : value = PE; text = (Prince Edward Island, Île-du-Prince-Edouard); orderEn = ; orderFr = 
+                            (DropdownField) : value = QC; text = (Quebec, Québec); orderEn = ; orderFr = 
+                            (DropdownField) : value = SK; text = (Saskatchewan, Saskatchewan); orderEn = ; orderFr = 
+                            (DropdownField) : value = YT; text = (Yukon, Yukon); orderEn = ; orderFr = 
+                        (FieldGroup) : text = (United States, États-Unis)
+                            (DropdownField) : value = AL; text = (Alabama, Alabama); orderEn = ; orderFr = 
+                            (DropdownField) : value = AK; text = (Alaska, Alaska); orderEn = ; orderFr = 
+                            (DropdownField) : value = AS; text = (American Samoa, Samoa  américaines); orderEn = ; orderFr = 
+                            (DropdownField) : value = AZ; text = (Arizona, Arizona); orderEn = ; orderFr = 
+                            (DropdownField) : text = (Arkansas, Arkansas); value = AR; orderFr = ; orderEn = ; triggerRelated = FALSE
+                            (DropdownField) : text = (California, Californie); value = CA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Colorado, Colorado); value = CO; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Connecticut, Connecticut); value = CT; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Delaware, Delaware); value = DE; orderEn = ; orderFr = 
+                            (DropdownField) : text = (District  of Columbia, District  de Columbia); value = DC; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Federated States of Micronesia, États fédérés de Micronésie); value = FM; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Florida, Floride); value = FL; orderEn = ; orderFr = 
+                            (DropdownField) : value = GA; text = (Georgia, Georgie); orderEn = ; orderFr = 
+                            (DropdownField) : text = (Guam, Guam); value = GU; orderEn = ; orderFr = 
+                            (DropdownField) : value = HI; text = (Hawaii, Hawaii); orderEn = ; orderFr = 
+                            (DropdownField) : text = (Idaho, Idaho); value = ID; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Illinois, Illinois); value = IL; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Indiana, Indiana); value = IN; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Iowa, Iowa); value = IA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Kansas, Kansas); value = KS; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Kentucky, Kentucky); value = KY; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Louisiana, Louisiane); value = LA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Maine, Maine); value = ME; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Marshall  Islands, Îles  Marshall); value = MH; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Maryland, Maryland); value = MD; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Massachusetts, Massachusetts); value = MA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Michigan, Michigan); value = MI; orderEn = ; orderFr = 
+                            (DropdownField) : triggerRelated = FALSE; text = (Minnesota, Minnesota); value = MN; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Mississippi, Mississippi); value = MS; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Missouri, Missouri); value = MO; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Montana, Montana); value = MT; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Nebraska, Nebraska); value = NE; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Nevada, Nevada); value = NV; orderEn = ; orderFr = 
+                            (DropdownField) : text = (New  Hampshire, New  Hampshire); value = NH; orderEn = ; orderFr = 
+                            (DropdownField) : text = (New  Jersey, New Jersey); value = NJ; orderEn = ; orderFr = 
+                            (DropdownField) : text = (New  Mexico, New Mexico); value = NM; orderEn = ; orderFr = 
+                            (DropdownField) : text = (New York, New York); value = NY; orderEn = ; orderFr = 
+                            (DropdownField) : text = (North  Carolina, Caroline du Nord); value = NC; orderEn = ; orderFr = 
+                            (DropdownField) : text = (North  Dakota, Dakota du Nord); value = ND; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Northern  Mariana Islands, îles Mariannes du Nord); value = MP; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Ohio, Ohio); value = OH; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Oklahoma, Oklahoma); value = OK; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Oregon, Oregon); value = OR; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Palau, Palau); value = PW; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Pennsylvania, Pennsylvanie); value = PA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Puerto  Rico, Puerto Rico); value = PR; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Rhode  Island, Rhode Island); value = RI; orderEn = ; orderFr = 
+                            (DropdownField) : text = (South  Carolina, Caroline du Sud); value = SC; orderEn = ; orderFr = 
+                            (DropdownField) : text = (South  Dakota, Dakota du Sud); value = SD; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Tennessee, Tennessee); value = TN; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Texas, Texas); value = TX; orderEn = ; orderFr = 
+                            (DropdownField) : text = (U.S.  Minor Outlying Islands, Petites îles aux abords des É.-U.); value = UM; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Utah, Utah); value = UT; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Vermont, Vermont); value = VT; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Virgin  Islands of the U.S., Îles Vierges américaines); value = VI; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Virginia, Virginie); value = VA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Washington, Washington); value = WA; orderEn = ; orderFr = 
+                            (DropdownField) : text = (West  Virginia, Virginie-Occidentale); value = WV; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Wisconsin, Wisconsin); value = WI; orderEn = ; orderFr = 
+                            (DropdownField) : text = (Wyoming, Wyoming); value = WY; orderEn = ; orderFr = 
+                (AnswerGroup) : layout = vertical
+                    (PostalZIPCodeAnswer, PrimaryRespondentAddressPostalCode) : text = (Postal code or <abbr title="Zone Improvement Plan">ZIP</abbr> code, Code postal ou code de zone); prefillable = TRUE; shortdescription_en = Postal code or ZIP code; shortdescription_fr = Postal code or ZIP code
+                (AnswerGroup) : layout = vertical
+                    (DropdownAnswer, PrimaryRespondentAddressCountry) : text = (Country, Pays); prefillable = TRUE; shortdescription_en = Country; shortdescription_fr = Country; textType = TRUE
+                        (DropdownField) : value = CAN; text = (Canada, Canada); orderEn = ; orderFr = 
+                        (DropdownField) : value = USA; text = (United States, États-Unis); orderEn = ; orderFr = 
+                (AnswerGroup) : layout = vertical
+                    (EmailAnswer, PrimaryRespondentEmailAddress) : text = (Email address, Adresse de courriel); maxValue = 254; prefillable = TRUE; shortdescription_en = E-mail address; shortdescription_fr = E-mail address
+                (AnswerGroup) : layout = vertical
+                    (PhoneAnswer, PrimaryRespondentTelephone) : text = (Telephone number (including area code), Numéro de téléphone (incluant l’indicatif régional)); prefillable = TRUE; shortdescription_en = Telephone number (including area code); shortdescription_fr = Telephone number (including area code)
+                    (NumericAnswer, PrimaryRespondentPhoneExtension) : prefillable = TRUE; readOnly = FALSE; shortdescription_en = Extension number (if applicable); shortdescription_fr = Numéro de poste (s’il y a lieu); text = (Extension number (if applicable), Numéro de poste (s’il y a lieu)); maxValue = 10; minValue = 0
+                (AnswerGroup) : layout = vertical
+                    (FaxAnswer, PrimaryRespondentFax) : text = (Fax number (including area code), Numéro de télécopieur (incluant l’indicatif régional)); prefillable = TRUE; shortdescription_en = Fax number; shortdescription_fr = Fax number
+            (Question, questionNumber 3) : questionNumber = 3; text = (Does this business or organization operate from a <strong>single</strong> or <strong>primary location</strong>?, Cette entreprise ou organisation opère-t-elle <strong>à partir d'un emplacement unique</strong> ou <strong>principal</strong>?); 
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, C1001) : 
+                        (RadioField) : value = 1; text = (Yes, Oui); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = FALSE; text = (<strong>Verify or provide</strong> this business or organization's <strong>primary operating address</strong>, and correct information if needed., <strong>Vérifiez ou indiquez l'adresse opérationnelle principale</strong> de cette entreprise ou organisation, et corrigez les informations si nécessaire.)
+                                (TextAnswer, OPAddressStreet) : text = (Street address (civic number and street), Adresse de la rue (numéro civique et rue)); maxValue = 64; prefillable = TRUE; shortdescription_en = Operating street address; shortdescription_fr = Operating street address
+                                (TextAnswer, OPAddressCity) : text = (City, Ville); maxValue = 32; prefillable = TRUE; shortdescription_en = Operating city; shortdescription_fr = Operating city
+                                (DropdownAnswer, OPAddressProvince) : text = (Province or territory, Province ou territoire); textType = TRUE; prefillable = TRUE; shortdescription_en = Province or territory; shortdescription_fr = ; 
+                                    (FieldGroup) : text = (Canada, Canada)
+                                        (DropdownField) : value = AB; text = (Alberta, Alberta); orderEn = ; orderFr = 
+                                        (DropdownField) : value = BC; text = (British Columbia, Colombie-Britannique); orderEn = ; orderFr = 
+                                        (DropdownField) : value = MB; text = (Manitoba, Manitoba); orderEn = ; orderFr = 
+                                        (DropdownField) : value = NB; text = (New Brunswick, Nouveau-Brunswick); orderEn = ; orderFr = 
+                                        (DropdownField) : value = NL; text = (Newfoundland and Labrador, Terre-Neuve-et-Labrador); orderEn = ; orderFr = 
+                                        (DropdownField) : value = NT; text = (Northwest Territories, Territoires-du-Nord-Ouest); orderEn = ; orderFr = 
+                                        (DropdownField) : value = NS; text = (Nova Scotia, Nouvelle-Écosse); orderEn = ; orderFr = 
+                                        (DropdownField) : value = NU; text = (Nunavut, Nunavut); orderEn = ; orderFr = 
+                                        (DropdownField) : value = ON; text = (Ontario, Ontario); orderEn = ; orderFr = 
+                                        (DropdownField) : value = PE; text = (Prince Edward Island, Île-du-Prince-Edouard); orderEn = ; orderFr = 
+                                        (DropdownField) : value = QC; text = (Quebec, Québec); orderEn = ; orderFr = 
+                                        (DropdownField) : value = SK; text = (Saskatchewan, Saskatchewan); orderEn = ; orderFr = 
+                                        (DropdownField) : value = YT; text = (Yukon, Yukon); orderEn = ; orderFr = 
+                                (PostalZIPCodeAnswer, OPAddressPostalCode) : text = (Postal Code, Code postal); prefillable = TRUE; shortdescription_en = Operating postal code; shortdescription_fr = Operating postal code
+                        (RadioField) : value = 3; text = (No, Non); orderEn = ; orderFr = 
+            (Question) : questionNumber = 4; text = (<strong>Verify or provide the current operational status</strong> of the business or organization identified by the legal and operating name above., <strong>Vérifiez ou indiquez le statut opérationnel actuel</strong> de l’entreprise ou de l’organisation identifié au moyen du nom légal et du nom commercial mentionnés ci-dessus.)
+                (AnswerGroup) : layout = vertical
+                    (RadioAnswer, B00323) : 
+                        (RadioField) : value = 1; text = (Operational, Opérationnelle); orderEn = ; orderFr = 
+                        (RadioField) : value = 2; text = (Not currently operational, N'est pas opérationnelle en ce moment); helpText = (<abbr title="For example"><strong>e.g.</strong></abbr><strong>,</strong> temporarily or permanently closed, change of ownership, <abbr title="Par exemple"><strong>p. ex.</strong></abbr> fermeture temporaire ou permanente, changement de propriétaire); triggerRelated = TRUE; orderEn = ; orderFr = 
+                            (AnswerGroup) : layout = vertical; hidden = TRUE
+                                (RadioAnswer, B00309) : text = (Why is this business or organization not currently operational?, Pourquoi cette entreprise ou organisation n’est-elle pas opérationnelle en ce moment?)
+                                    (RadioField) : value = 2; text = (Seasonal operations, Exploitation saisonnière); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00217) : text = (When did this business or organization close for the season?, Quand cette entreprise ou organisation a-t-elle cessé ses activités pour la saison?); helpText = (Date, Date)
+                                            (DateAnswer, B00218) : text = (When does this business or organization expect to resume operations?, Quand cette entreprise ou organisation s’attend-elle à reprendre ses activités?); helpText = (Date, Date)
+                                    (RadioField) : value = 3; text = (Ceased operations, A cessé ses activités); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00211) : text = (When did this business or organization cease operations?, Quand cette entreprise ou organisation a-t-elle cessé ses activités?); helpText = (Date, Date)
+                                            (RadioAnswer, B00311) : text = (Why did this business or organization cease operations?, Pourquoi cette entreprise ou organisation a-t-elle cessé ses activités?)
+                                                (RadioField) : value = 1; text = (Bankruptcy, Faillite); orderEn = ; orderFr = 
+                                                (RadioField) : value = 2; text = (Liquidation, Liquidation); orderEn = ; orderFr = 
+                                                (RadioField) : value = 3; text = (Dissolution, Dissolution); orderEn = ; orderFr = 
+                                                (RadioField) : value = 4; text = (Other, Autre); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                                    (AnswerGroup) : layout = vertical; hidden = TRUE
+                                                        (TextAnswer, B00312) : text = (Specify the other reasons why operations ceased, Précisez les autres raisons pour lesquelles les activités ont cessé); maxValue = 50
+                                    (RadioField) : value = 4; text = (Sold operations, A vendu ses entités opérationnelles); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00212) : text = (When was this business or organization sold?, Quand cette entreprise ou organisation a-t-elle été vendue?); helpText = (Date, Date)
+                                            (TextAnswer, B00406) : text = (What is the legal name of the buyer?, Quelle est la dénomination sociale de l’acheteur?); maxValue = 100
+                                    (RadioField) : value = 5; text = (Amalgamated with other businesses or organizations, A fusionné avec plusieurs entreprises ou organisations); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00213) : text = (When did this business or organization amalgamate?, Quand la fusion de cette entreprise ou organisation a-t-elle eu lieu?); helpText = (Date, Date)
+                                            (TextAnswer, B00407) : text = (What is the legal name of the resulting or continuing business or organization?, Quelle est la dénomination sociale de l’entreprise ou de l’organisation ainsi créée ou qui demeure?); maxValue = 100
+                                            (TextAnswer, B00408) : text = (What are the legal names of the other amalgamated businesses or organizations?, Quelles sont les dénominations sociales des autres entreprises ou organisations fusionnées?); maxValue = 100; 
+                                    (RadioField) : value = 6; text = (Temporarily inactive but will reopen, Temporairement inactive, mais rouvrira); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00214) : text = (When did this business or organization become temporarily inactive?, Quand cette entreprise ou organisation est-elle devenue temporairement inactive?); helpText = (Date, Date)
+                                            (DateAnswer, B00215) : text = (When does this business or organization expect to resume operations?, Quand cette entreprise ou organisation prévoit-elle reprendre ses activités?); helpText = (Date, Date); 
+                                            (TextAnswer, B00313) : text = (Why is this business or organization temporarily inactive?, Pourquoi cette entreprise ou organisation est-elle temporairement inactive?); maxValue = 100
+                                    (RadioField) : value = 7; text = (No longer operating because of other reasons, N'est plus opérationnelle pour d'autres raisons); triggerRelated = TRUE; orderEn = ; orderFr = 
+                                        (AnswerGroup) : layout = vertical; hidden = TRUE
+                                            (DateAnswer, B00216) : text = (When did this business or organization cease operations?, Quand cette entreprise ou organisation a-t-elle cessé ses activités?); helpText = (Date, Date)
+                                            (TextAnswer, B00314) : text = (Why did this business or organization cease operations?, Pourquoi cette entreprise ou organisation a-t-elle cessé ses activités?); maxValue = 100
+            (Question, questionNumber 5) : questionNumber = 5; text = (<strong>Provide a brief but precise description </strong>of this business or organization’s main activity., <strong>Indiquez une description brève mais précise</strong> de l'activité principale de cette entreprise ou organisation.); 
+                (AnswerGroup) : layout = vertical
+                    (TextAnswer, B05003) : text = (Main activity description (<abbr title="For example"><strong>e.g.</strong></abbr><strong>,</strong> breakfast cereal manufacturing, shoe store, software development), Description de l’activité principale (<abbr title="Par exemple"><strong>p. ex.</strong></abbr>, fabrication de céréales, magasin de chaussures, développement de logiciels)); maxValue = 110
+            (Question, questionNumber 6) : questionNumber = 6; text = (<strong>Provide</strong> the <strong>Canadian Industry Code</strong> from the North American Industry Classification System (NAICS) most applicable for the main activity provided in Question #5., <strong>Indiquez</strong> le code de la <strong>class canadienne</strong> du Système de classification des industries de l'Amérique du Nord (SCIAN) le plus applicable à l'activité principale indiquée à la question 5.); 
+                (AnswerGroup) : layout = vertical
+                    (NumericAnswer, B05023_ist_idt_CODE) : maxValue = 6; minValue = 0; text = (Canadian Industry Code (if possible), Code de la class canadienne (si possible))
+            (Logic) : openLogic = FALSE; name = Setting outofbusiness flag
+                (Conditional) 
+                    ( (B00309 == 3) OR (B00309 == 4) OR (B00309 == 5) OR (B00309 == 7) )
+                    (Action) : actionName = SET; setTarget = outofbusiness <- 1
+                    (Action) : actionName = GOTO; gotoTarget = pageNumber 6
+                    (Conditional) 
+                        ( NO CONDITION )
+                        (Action) : actionName = SET; setTarget = outofbusiness <- 0
+            (Logic) : openLogic = FALSE; name = OPAddressStreet; description = 
+                (Conditional) 
+                    ( (OPAddressStreet != RESPONSE) AND (C1001 == 1) )
+                    (Action) : actionName = EDIT; editId = OPAddressStreetNR; editType = soft; editTrigger = OPAddressStreet); editTextEn = Please enter the street address of the primary operating address.; editTextFr = Veuillez entrer l'adresse de la rue de l'adresse opérationnelle principale.
+            (Logic) : openLogic = FALSE; name = OPAddressCity; description = 
+                (Conditional) 
+                    ( (OPAddressCity != RESPONSE) AND (C1001 == 1) )
+                    (Action) : actionName = EDIT; editType = soft; editTrigger = OPAddressCity); editTextEn = Please enter the city of the primary operating address.; editTextFr = Veuillez entrer la ville de l'adresse opérationnelle principale.; editId = OPAddressCityNR
+            (Logic) : openLogic = FALSE; name = OPAddressProv; description = 
+                (Conditional) 
+                    ( (OPAddressProvince != RESPONSE) AND (C1001 == 1) )
+                    (Action) : actionName = EDIT; editType = soft; editTrigger = OPAddressProvince); editTextEn = Please enter the province or territory of the primary operating address.; editTextFr = Veuillez entrer la province ou territoire de l'adresse opérationnelle principale.; editId = OPAddressProvNR
+            (Logic) : openLogic = FALSE; name = OPAddressPostalCode; description = 
+                (Conditional) 
+                    ( (OPAddressPostalCode != RESPONSE) AND (C1001 == 1) )
+                    (Action) : actionName = EDIT; editType = soft; editTrigger = OPAddressPostalCode); editTextEn = Please enter the postal code of the primary operating address.; editTextFr = Veuillez entrer le code postal de l'adresse opérationnelle principale.; editId = OPAddressPostalCodeNR
+            (Logic) : openLogic = FALSE; name = Q3 == NONRESPONSE
+                (Conditional) 
+                    ( (C1001 != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = Q3_NR; editType = soft; editTrigger = questionNumber 3); editTextEn = Please indicate if this business or organization operates from a <strong>single</strong> or <strong>primary location</strong>.; editTextFr = Veuillez indiquer si cette entreprise ou organisation opère-t-elle <strong>à partir d&#39;un emplacement unique</strong> ou <strong>principal</strong>.
+            (Logic) : openLogic = FALSE; name = LegalName == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (LegalName != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSeca; editType = priority2; editTextEn = Please enter the legal name of the business or organization.; editTrigger = LegalName); editTextFr = Veuillez entrer la dénomination sociale de l’entreprise ou de l'organisation.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentGivenNames == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentGivenNames != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecfirst; editType = priority2; editTrigger = PrimaryRespondentGivenNames); editTextEn = Please enter the first name of the designated contact.; editTextFr = Veuillez entrer le prénom de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentFamilyName == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentFamilyName != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSeclast; editType = priority2; editTrigger = PrimaryRespondentFamilyName); editTextEn = Please enter the last name of the designated contact.; editTextFr = Veuillez entrer le nom de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentEmailAddress == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentEmailAddress != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecContact; editType = priority2; editTrigger = PrimaryRespondentEmailAddress); editTextEn = To facilitate future electronic reporting please enter a valid email address of the designated contact.; editTextFr = Veuillez indiquer une adresse électronique valide de la personne-ressource désignée. Cela facilitera la collecte électronique des enquêtes.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAddressStreet == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressStreet != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecAddressStreet; editType = priority2; editTrigger = PrimaryRespondentAddressStreet); editTextEn = Please enter the mailing address of the designated contact.; editTextFr = Veuillez entrer l'adresse postale de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAddressCity == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressCity != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecAddressCity; editType = priority2; editTrigger = PrimaryRespondentAddressCity); editTextEn = Please enter the city of the designated contact.; editTextFr = Veuillez entrer la ville de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAddressProvinceCode == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressProvinceCode != RESPONSE) )
+                    (Action) : actionName = EDIT; editType = priority2; editId = LBSecAddressProvince; editTrigger = PrimaryRespondentAddressProvinceCode); editTextEn = Please enter the province territory or state of the designated contact.; editTextFr = Veuillez entrer la province territoire ou état de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAddressPostalCode == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressPostalCode != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecPostal; editType = priority2; editTrigger = PrimaryRespondentAddressPostalCode); editTextEn = Please enter the postal or <abbr title="Zone Improvement Plan">ZIP</abbr> code of the designated contact.; editTextFr = Veuillez entrer le code postal ou le code de zone de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAddressCountry == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressCountry != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LBSecCountry; editType = priority2; editTrigger = PrimaryRespondentAddressCountry); editTextEn = Please enter the country of the designated contact.; editTextFr = Veuillez entrer le pays de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentAdressCountry != MATCH; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentAddressCountry == CAN) AND (PrimaryRespondentAddressProvinceCode != NONRESPONSE) AND ( (PrimaryRespondentAddressProvinceCode == AL) OR (PrimaryRespondentAddressProvinceCode == AK) OR (PrimaryRespondentAddressProvinceCode == AS) OR (PrimaryRespondentAddressProvinceCode == AZ) OR (PrimaryRespondentAddressProvinceCode == AR) OR (PrimaryRespondentAddressProvinceCode == CA) OR (PrimaryRespondentAddressProvinceCode == CO) OR (PrimaryRespondentAddressProvinceCode == CT) OR (PrimaryRespondentAddressProvinceCode == DE) OR (PrimaryRespondentAddressProvinceCode == DC) OR (PrimaryRespondentAddressProvinceCode == FL) OR (PrimaryRespondentAddressProvinceCode == GA) OR (PrimaryRespondentAddressProvinceCode == GU) OR (PrimaryRespondentAddressProvinceCode == HI) OR (PrimaryRespondentAddressProvinceCode == ID) OR (PrimaryRespondentAddressProvinceCode == IL) OR (PrimaryRespondentAddressProvinceCode == IN) OR (PrimaryRespondentAddressProvinceCode == IA) OR (PrimaryRespondentAddressProvinceCode == KS) OR (PrimaryRespondentAddressProvinceCode == KY) OR (PrimaryRespondentAddressProvinceCode == LA) OR (PrimaryRespondentAddressProvinceCode == ME) OR (PrimaryRespondentAddressProvinceCode == MD) OR (PrimaryRespondentAddressProvinceCode == MA) OR (PrimaryRespondentAddressProvinceCode == MI) OR (PrimaryRespondentAddressProvinceCode == MN) OR (PrimaryRespondentAddressProvinceCode == MS) OR (PrimaryRespondentAddressProvinceCode == MO) OR (PrimaryRespondentAddressProvinceCode == MT) OR (PrimaryRespondentAddressProvinceCode == NE) OR (PrimaryRespondentAddressProvinceCode == NV) OR (PrimaryRespondentAddressProvinceCode == NH) OR (PrimaryRespondentAddressProvinceCode == NJ) OR (PrimaryRespondentAddressProvinceCode == NY) OR (PrimaryRespondentAddressProvinceCode == NC) OR (PrimaryRespondentAddressProvinceCode == ND) OR (PrimaryRespondentAddressProvinceCode == MP) OR (PrimaryRespondentAddressProvinceCode == OH) OR (PrimaryRespondentAddressProvinceCode == OK) OR (PrimaryRespondentAddressProvinceCode == OR) OR (PrimaryRespondentAddressProvinceCode == PA) OR (PrimaryRespondentAddressProvinceCode == PR) OR (PrimaryRespondentAddressProvinceCode == RI) OR (PrimaryRespondentAddressProvinceCode == SC) OR (PrimaryRespondentAddressProvinceCode == SD) OR (PrimaryRespondentAddressProvinceCode == TN) OR (PrimaryRespondentAddressProvinceCode == TX) OR (PrimaryRespondentAddressProvinceCode == UM) OR (PrimaryRespondentAddressProvinceCode == UT) OR (PrimaryRespondentAddressProvinceCode == VT) OR (PrimaryRespondentAddressProvinceCode == VI) OR (PrimaryRespondentAddressProvinceCode == VA) OR (PrimaryRespondentAddressProvinceCode == WA) OR (PrimaryRespondentAddressProvinceCode == WV) OR (PrimaryRespondentAddressProvinceCode == WI) OR (PrimaryRespondentAddressProvinceCode == WY) ) OR (PrimaryRespondentAddressCountry == USA) AND ( (PrimaryRespondentAddressProvinceCode != NONRESPONSE) AND ( (PrimaryRespondentAddressProvinceCode == NONRESPONSE) OR (PrimaryRespondentAddressProvinceCode == NS) OR (PrimaryRespondentAddressProvinceCode == NL) OR (PrimaryRespondentAddressProvinceCode == NB) OR (PrimaryRespondentAddressProvinceCode == PE) OR (PrimaryRespondentAddressProvinceCode == QC) OR (PrimaryRespondentAddressProvinceCode == ON) OR (PrimaryRespondentAddressProvinceCode == MB) OR (PrimaryRespondentAddressProvinceCode == SK) OR (PrimaryRespondentAddressProvinceCode == AB) OR (PrimaryRespondentAddressProvinceCode == BC) OR (PrimaryRespondentAddressProvinceCode == YT) OR (PrimaryRespondentAddressProvinceCode == NT) OR (PrimaryRespondentAddressProvinceCode == NU) ) ) )
+                    (Action) : actionName = EDIT; editId = LBSecProvCountryConsistency; editType = priority2; editTrigger = PrimaryRespondentAddressCountry); editTextEn = The country selected is inconsistent with the selected province territory or state. Please verify and correct.; editTextFr = Le pays sélectionné ne concorde pas avec la province le territoire ou l’état sélectionné. Veuillez vérifier et corriger.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentTelephone == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentTelephone != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LbSecTelephone; editType = priority2; editTrigger = PrimaryRespondentTelephone); editTextEn = Please enter the telephone number of the designated contact.; editTextFr = Veuillez entrer le numéro de téléphone de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = PrimaryRespondentLanguageCode == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (PrimaryRespondentLanguageCode != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = LbSecLanguage; editType = priority2; editTrigger = PrimaryRespondentLanguageCode); editTextEn = Please select the preferred language of communication of the designated contact.; editTextFr = Veuillez sélectionner la langue de communication préférée de la personne-ressource désignée.
+            (Logic) : openLogic = FALSE; name = Business not currently operational; description = 
+                (Conditional) 
+                    ( (B00309 != RESPONSE) AND (B00323 == 2) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00309_1; editType = priority2; editTrigger = B00309); editTextEn = Please select the reason why this business or organization is not currently operational.; editTextFr = Veuillez sélectionner la raison pourquoi cette entreprise ou organisation n'est pas opérationnelle en ce moment.
+            (Logic) : openLogic = FALSE; name = Date not Provided for B00217; description = 
+                (Conditional) 
+                    ( (B00217 != RESPONSE) AND (B00323 == 2) AND (B00309 == 2) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00217_1; editType = priority2; editTrigger = B00217); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Date of resuming operations; description = 
+                (Conditional) 
+                    ( (B00309 == 2) AND (B00218 > B00217
+                                (ValueOperator) : value = +365) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00218_2; editType = priority2; editTrigger = B00218); editTextEn = Please verify and <strong>enter the date</strong> for when this business or organization expects to <strong>resume its operations</strong> that is <strong>not more than 12 months from the date the seasonal operations were closed</strong>.; editTextFr = Veuillez vérifier et <strong>entrer la date</strong> à laquelle cette entreprise ou organisation prévoit <strong>reprendre ses activités</strong> et ce pour une période <strong>ne dépassant pas 12 mois à compter de la date de fermeture des activités saisonnières</strong>.
+            (Logic) : openLogic = FALSE; name = Date after today; description = 
+                (Conditional) 
+                    ( (B00309 == 2) AND (B00218 < THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00218_4; editType = priority2; editTrigger = B00218); editTextEn = The date entered is before today’s date. Please <strong>verify and enter a date that is after today’s date</strong> for when this business or organization <strong>expects to resume its operations</strong>.; editTextFr = La date indiquée se situe avant la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date ultérieure à la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation <strong>prévoit reprendre ses activités</strong>.
+            (Logic) : openLogic = FALSE; name = After today's date; description = 
+                (Conditional) 
+                    ( (B00309 == 2) AND (B00217 > THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00217_2; editType = priority2; editTrigger = B00217); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization <strong>closed for the season</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation a <strong>cessé ses activités pour la saison</strong>.
+            (Logic) : openLogic = FALSE; name = Date Missing from B00218; description = 
+                (Conditional) 
+                    ( (B00218 != RESPONSE) AND (B00323 == 2) AND (B00309 == 2) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00218_1; editType = priority2; editTrigger = B00218); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Date Missing from B00211; description = 
+                (Conditional) 
+                    ( (B00211 != RESPONSE) AND (B00323 == 2) AND (B00309 == 3) )
+                    (Action) : actionName = EDIT; editType = priority2; editTrigger = B00211); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.; editId = Ed_BusSta_B00211_1
+            (Logic) : openLogic = FALSE; name = After today's date; description = 
+                (Conditional) 
+                    ( (B00309 == 3) AND (B00211 > THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00211_2; editType = priority2; editTrigger = B00211); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization <strong>ceased its operations</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation a <strong>cessé ses activités</strong>.
+            (Logic) : openLogic = FALSE; name = Select the reason why the business ceased operations; description = 
+                (Conditional) 
+                    ( (B00311 != RESPONSE) AND (B00323 == 2) AND (B00309 == 3) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00311_1; editType = priority2; editTrigger = B00311); editTextEn = Please select the reason why this business or organization ceased operations.; editTextFr = Veuillez sélectionner la raison pourquoi cette entreprise ou organisation a cessé ses activités
+            (Logic) : openLogic = FALSE; name = Describe the other reasons; description = 
+                (Conditional) 
+                    ( (B00311 == 4) AND (B00312 != RESPONSE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00312_1; editType = priority2; editTrigger = B00312); editTextEn = Other was selected please describe the other reasons.; editTextFr = Autre a été sélectionné veuillez décrire l’autres raisons.
+            (Logic) : openLogic = FALSE; name = Provide a date for B00212; description = 
+                (Conditional) 
+                    ( (B00212 != RESPONSE) AND (B00323 == 2) AND (B00309 == 4) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00212_1; editType = priority2; editTrigger = B00212); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Date is after today; description = 
+                (Conditional) 
+                    ( (B00309 == 4) AND (B00212 == THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00212_2; editType = priority2; editTrigger = B00212); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization <strong>sold its operations</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation a <strong>vendu ses entités opérationnelles</strong>.
+            (Logic) : openLogic = FALSE; name = LegalName == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (B00406 == NONRESPONSE) AND (B00323 == 2) AND (B00309 == 4) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00406_1; editType = priority2; editTrigger = B00406); editTextEn = Please provide the legal name of the buyer.; editTextFr = Veuillez fournir la dénominaton sociale de l’acheteur.
+            (Logic) : openLogic = FALSE; name = Missing date; description = 
+                (Conditional) 
+                    ( (B00213 != RESPONSE) AND (B00323 == 2) AND (B00309 == 5) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00213_1; editType = priority2; editTrigger = B00213); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Business Amalgamated; description = 
+                (Conditional) 
+                    ( (B00309 == 5) AND (B00213 > THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00213_2; editType = priority2; editTrigger = B00213); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization <strong>amalgamated</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation a <strong>fusionné</strong>.
+            (Logic) : openLogic = FALSE; name = Missing name of resulting or continuing busienss; description = 
+                (Conditional) 
+                    ( (B00407 != RESPONSE) AND (B00323 == 2) AND (B00309 == 5) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00407_1; editType = priority2; editTrigger = B00407); editTextEn = Please provide the legal name of the resulting or continuing business or organization.; editTextFr = Veuillez fournir la dénomination sociale de l’entreprise ou de l’organisation ainsi créée ou qui demeure.
+            (Logic) : openLogic = FALSE; name = Amalgamated business; description = 
+                (Conditional) 
+                    ( (B00408 != RESPONSE) AND (B00323 == 2) AND (B00309 == 5) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00408_1; editType = priority2; editTrigger = B00408); editTextEn = Please provide the legal names of the other amalgamated businesses or organizations.; editTextFr = Veuillez fournir les dénominations sociales des autres entreprises ou organisations.
+            (Logic) : openLogic = FALSE; name = Missing date for B00214; description = 
+                (Conditional) 
+                    ( (B00214 != RESPONSE) AND (B00323 == 2) AND (B00309 == 6) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00214_1; editType = priority2; editTrigger = B00214); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Business temporarily inactive; description = 
+                (Conditional) 
+                    ( (B00309 == 6) AND (B00214 > THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00214_2; editType = priority2; editTrigger = B00214); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization became <strong>temporarily inactive</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation est devenue <strong>temporairement inactif</strong>.
+            (Logic) : openLogic = FALSE; name = Missing Date for B00215; description = 
+                (Conditional) 
+                    ( (B00215 != RESPONSE) AND (B00323 == 2) AND (B00309 == 6) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00215_1; editType = priority2; editTrigger = B00215); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Business resuming its operations; description = 
+                (Conditional) 
+                    ( (B00309 == 6) AND (B00215 < THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00215_3; editType = priority2; editTrigger = B00215); editTextEn = The date entered is before today’s date. Please v<strong>erify and enter a date that is after today’s date</strong> for when this business or organization <strong>expects to resume its operations</strong>.; editTextFr = La date indiquée se situe avant la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date ultérieure à la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation <strong>prévoit reprendre ses activités</strong>.
+            (Logic) : openLogic = FALSE; name = Business is temporarily inactive; description = 
+                (Conditional) 
+                    ( (B00313 != RESPONSE) AND (B00323 == 2) AND (B00309 == 6) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00313_1; editType = priority2; editTrigger = B00313); editTextEn = Please provide the reason this business or organization is temporarily inactive.; editTextFr = Veuillez fournir la raison pour laquelle cette entreprise ou organisation est temporairement inactive.
+            (Logic) : openLogic = FALSE; name = Missing Date for B00216; description = 
+                (Conditional) 
+                    ( (B00216 != RESPONSE) AND (B00313 == 2) AND (B00309 == 7) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00216_1; editType = priority2; editTrigger = B00216); editTextEn = Please provide a date.; editTextFr = Veuillez fournir une date.
+            (Logic) : openLogic = FALSE; name = Missing Date for B00216; description = 
+                (Conditional) 
+                    ( (B00309 == 7) AND (B00216 > THISDATE) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00216_2; editType = priority2; editTrigger = B00216); editTextEn = The date entered is after today’s date. Please <strong>verify and enter a date that is prior to or on today’s date</strong> when this business or organization <strong>ceased its operations</strong>.; editTextFr = La date indiquée se situe après la date d’aujourd’hui. Veuillez <strong>vérifier et entrer une date antérieure ou la date d’aujourd’hui</strong> indiquant le moment où cette entreprise ou organisation a <strong>cessé ses activités</strong>.
+            (Logic) : openLogic = FALSE; name = Business ceased operations; description = 
+                (Conditional) 
+                    ( (B00314 != RESPONSE) AND (B00323 == 2) AND (B00309 == 7) )
+                    (Action) : actionName = EDIT; editId = Ed_BusSta_B00314_1; editType = priority2; editTrigger = B00314); editTextEn = Please provide the reason this business or organization ceased operations.; editTextFr = Veuillez fournir la raison pour laquelle cette entreprise ou organisation a cessé ses activités.
+            (Logic) : openLogic = FALSE; name = Q5 == NONRESPONSE; description = 
+                (Conditional) 
+                    ( (B05003 != RESPONSE) AND ( (B00309 != 3) AND (B00309 != 4) AND (B00309 != 5) AND (B00309 != 7) ) )
+                    (Action) : actionName = EDIT; editId = Q5NR; editType = priority1; editTrigger = questionNumber 5); editTextEn = Please provide a description of the main activity.; editTextFr = Veuillez fournir une description de l'activité principale.
+            (Logic) : openLogic = FALSE; name = Q6 == Invalid NAICS; description = 
+                (Conditional) 
+                    ( () )
+                    (Action) : actionName = EDIT; editId = EditForQuestion6; editType = soft; editTrigger = questionNumber 6); editTextEn = Please enter a valid NAICS code.; editTextFr = Veuillez entrer un code SCIAN valide.
+    (Section) : text = (Feedback, Commentaires); shortDescription = Optional standard module page
+        (Page) : pageNumber = 4; shortDescription = Feedback; id = e8e259ff-cc3b-44de-b303-0bdac0093e81
+            (Question) : questionNumber = 7; text = (Do you have any comments about this questionnaire?, Avez-vous des commentaires à propos de ce questionnaire?)
+                (AnswerGroup) : layout = vertical
+                    (CommentBoxAnswer, B00002) : maxValue = 300; text = (Enter your comments, Entrez vos commentaires)
+    (Section) : text = (Submit, Soumettre); shortDescription = Mandatory standard module
+        (Page, pageNumber 5) : pageNumber = 5; shortDescription = 
+            (Info) : text = (INTERVIEWER: The following instructions are applicable to mandatory business surveys only.<br/><br/><ul><li>If the survey collection method is 100% CATI, the ‘Record linkages’ and the applicable ‘Data-sharing’ agreement below must be read to the respondent unless the directives were provided to the respondent prior to collection.</li><li>If the survey collection method is multi-mode, meaning a survey with an rEQ and/or paper questionnaire that already includes the required directives, it is not necessary to read the ‘Record linkages’ or the the applicable ‘Data-sharing’ agreement below. They can be referred to if asked by the respondent.</li></ul><details><summary><strong>Record Linkages</strong></summary><strong>Statistics Canada may combine your responses from this survey with information from other surveys or from administrative sources.</strong></details>, INTERVIEWEUR : Les directives suivantes s’appliquent seulement si c’est une enquête entreprise obligatoire.<br/><br/><ul><li>Si la méthode de collecte de l’enquête est 100 % ITAO, le « Couplages d’enregistrements » et « l’Entente de partage de données » approprié ci-dessous doivent être lu au répondant à moins que les directives aient été fournies avant le début de la collecte.</li><li>Si la méthode de collecte de l’enquête est multimode, ce qui signifie une enquête en compagnie d’un QEr et/ou un questionnaire papier, il n’est plus nécessaire de lire au répondant le « Couplages d’enregistrements » et « l’Entente de partage de données » ci-dessous. Vous pouvez y référer à la demande du répondant.</li></ul><details><summary><strong>Couplages d’enregistrements</strong></summary><strong>Statistique Canada pourrait combiner vos réponses à cette enquête avec des renseignements provenant d’autres enquêtes ou de sources administratives.</strong></details>)
+            (Logic) : openLogic = FALSE; name = GOTO iEQ Exit Page; description = 
+                (Conditional) 
+                    ( (InterviewerFlag == 1) )
+                    (Action) : actionName = GOTO; gotoTarget = pageNumber 5
+                    (Conditional) 
+                        ( NO CONDITION )
+                        (Action) : actionName = GOTO; gotoTarget = pageNumber 6
+        (Page, pageNumber 6) : pageNumber = 6; shortDescription = Submit – mandatory standard module; 
+            (Info) : text = (Press the <strong>Submit </strong>button in the bottom right corner for the Business Collection Portal., Appuyer le bouton <strong>Soumettre</strong> situé dans le coin inférieur droit pour le Portail de la Collecte Entreprise.); 
+            (Info) : text = (If you are ready to submit the questionnaire, press the <strong>Submit </strong>button in the bottom right corner., Si vous êtes prêt à soumettre le questionnaire, appuyez sur le bouton <strong>Soumettre </strong>situé dans le coin inférieur droit.); 
+            (Logic) : openLogic = FALSE; name = Display info block #1; description = 
+                (Conditional) 
+                    ( (InterviewerFlag == 1) )
+                    (Action) : actionName = DISPLAY; displayTarget = Info_5ad5063d445744569663370ee9ee9cfd
+            (Logic) : openLogic = FALSE; name = Display info block #5; description = 
+                (Conditional) 
+                    ( (InterviewerFlag != 1) AND (outofbusiness == 0) )
+                    (Action) : actionName = DISPLAY; displayTarget = Info_e93469cab8fe4ecd9c8b96bf005c6600
+    (Variable, SurveyNameEnglish) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = TRUE
+    (Variable, SurveyNameFrench) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = TRUE
+    (Variable, InterviewerName) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = FALSE
+    (Variable, NAICS_Title_E) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = TRUE
+    (Variable, NAICS_Title_F) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = TRUE
+    (Variable, secondary_NAICS_TITLE_E) : format = text; shortdescription_fr = ; shortdescription_en = 
+    (Variable, secondary_NAICS_TITLE_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, RefMonth_E) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = FALSE
+    (Variable, RefMonth_F) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryOutput = FALSE
+    (Variable, submitpagetext) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, submitpagetextf) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, NAICS_Standards_Module_Inclusion_Exclusion_Flag) : format = numeric; shortdescription_en = ; shortdescription_fr = 
+    (Variable, outofbusiness) : format = numeric; shortdescription_en = ; shortdescription_fr = ; mandatoryOutput = TRUE
+    (Variable, logicdate) : format = date; mandatoryPrefill = FALSE; shortdescription_en = ; shortdescription_fr = 
+    (Variable, ReferencePeriod) : format = text; shortdescription_en = ; shortdescription_fr = ; mandatoryPrefill = TRUE
+    (Variable, DV_RefYear) : format = numeric; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_RefYear_Plus1) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_RefYear) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, InitialNAICS) : format = numeric; mandatoryPrefill = TRUE; shortdescription_en = ; shortdescription_fr = 
+    (Variable, CollectionNAICS_Code) : format = numeric; shortdescription_en = ; shortdescription_fr = 
+    (Variable, NAICS_TITLE_E) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, NAICS_TITLE_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, NAICS_Desc_E) : mandatoryPrefill = TRUE; format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, NAICS_Desc_F) : mandatoryPrefill = TRUE; format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, CoverageStatement) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_BUSINESSORGANIZATION1_E) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_BUSINESSORGANIZATION2_E) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_BUSINESSORGANIZATIONAL_E) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_BUSINESSORGANIZATIONS_E) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_BUSINESSORGANIZATION1_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_THISBUSINESSORGANIZATION1_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_THISBUSINESSORGANIZATION2_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_ILELLE_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_CREE_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, DT_MENE_F) : format = text; shortdescription_en = ; shortdescription_fr = 
+    (Variable, dummyvariableforspace) : format = text
+

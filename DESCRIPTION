@@ -1,0 +1,28 @@
+Package: stcEQDT
+Title: Statistics Canada EQDT R package
+Version: 0.0.007
+Authors@R: 
+    person("Kenneth", "Chu", , "kenneth.chu@canada.ca", role = "cre",
+           comment = c(ORCID = "https://orcid.org/0000-0002-0270-4752"))
+Description: This package provides a collection of auxiliary utilities for
+    working with the Electronic Questinnaire Design Tool (EQDT).
+License: MIT + file LICENSE
+VignetteBuilder: 
+    R.rsp
+Encoding: UTF-8
+Language: fr
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    ggplot2,
+    R.rsp,
+    rmarkdown,
+    rpart,
+    testthat (>= 3.0.0),
+    tools
+Config/testthat/edition: 3
+Imports: 
+    R6,
+    dplyr,
+    rjson
