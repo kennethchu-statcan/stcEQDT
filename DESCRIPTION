@@ -1,6 +1,6 @@
 Package: stcEQDT
 Title: Statistics Canada EQDT R package
-Version: 0.0.007
+Version: 0.0.008
 Authors@R: 
     person("Kenneth", "Chu", , "kenneth.chu@canada.ca", role = "cre",
            comment = c(ORCID = "https://orcid.org/0000-0002-0270-4752"))

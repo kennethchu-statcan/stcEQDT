@@ -364,8 +364,7 @@ pre code {
 
 <p>This vignette demonstrates how to use the R function <strong>json2tree(.)</strong> implemented in the R package <strong>stcEQDT</strong> in order to visualize the questionnaire structure encoded in a given input EQDT JSON file.</p>
 <p>First, load the R package <strong>stcEQDT</strong>.</p>
-<pre class="r"><code>library(stcEQDT)
-library(logger)</code></pre>
+<pre class="r"><code>library(stcEQDT)</code></pre>
 <p>For illustration purposes, a sample EQDT JSON file <strong>OID-exit.json</strong> has been bundled with the R package <strong>stcEQDT</strong>. We retrieve the system path of this sample EQDT JSON file, and save it to the variable <strong>eqdt.json</strong>:</p>
 <pre class="r"><code>eqdt.json &lt;- base::system.file(&quot;extdata&quot;, &quot;OID-exit.json&quot;, package = &quot;stcEQDT&quot;)</code></pre>
 <p>Next, we display the first 50 lines of the sample EQDT JSON file <strong>OID-exit.json</strong>:</p>
